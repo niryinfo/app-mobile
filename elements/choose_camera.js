@@ -22,16 +22,6 @@ export default class ChooseCamera extends Component {
           <View style={[styles.choose_content, boxShadow.depth_2]}>
             <TouchableOpacity
               style={styles.choose_item}
-              onPress={() => this.props.onCamera()}>
-              <Entypo
-                name="camera"
-                size={24}
-                color={colorScheme === 'dark' ? colors.light : colors.dark}
-              />
-              <Text>Caméra</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={styles.choose_item}
               onPress={() => this.props.onLibrary()}>
               <FontAwesome
                 name="photo"
