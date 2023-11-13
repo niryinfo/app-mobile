@@ -38,6 +38,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* qitkifTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = qitkifTests.m; sourceTree = "<group>"; };
 		015EC47518A4CE5029043FB8 /* libPods-qitkif.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qitkif.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C37C25F2B026E0400381ECC /* qitkif.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = qitkif.entitlements; path = qitkif/qitkif.entitlements; sourceTree = "<group>"; };
 		0C382BCB2B02412B006D446D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* qitkif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qitkif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = qitkif/AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 		13B07FAE1A68108700A75B9A /* qitkif */ = {
 			isa = PBXGroup;
 			children = (
+				0C37C25F2B026E0400381ECC /* qitkif.entitlements */,
 				B147AE0F2AA0633200BD1282 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
@@ -579,13 +581,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = qitkif/qitkif.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ACAL79FJZZ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = qitkif/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 6;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -605,12 +611,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = qitkif/qitkif.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ACAL79FJZZ;
 				INFOPLIST_FILE = qitkif/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 6;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
