@@ -156,7 +156,7 @@ class Header extends Component {
 
 const styles = StyleSheet.create({
   header: {
-    height: 50,
+    height: 100,
     backgroundColor: colors.primary,
     flexDirection: 'row',
     alignItems: 'center',

@@ -4,7 +4,7 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
-#import <React/RCTAppSetupUtils.h>
+#import <RCTAppSetupUtils.h>
 #import <Firebase.h>
 
 #if RCT_NEW_ARCH_ENABLED
@@ -36,7 +36,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
       [FIRApp configure];
   }
 
-  RCTAppSetupPrepareApp(application);
+  RCTAppSetupPrepareApp(application, true);
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
 
@@ -49,7 +49,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 #endif
 
   NSDictionary *initProps = [self prepareInitialProps];
-  UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"qitkif", initProps);
+  UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"qitkif", initProps, true);
 
   if (@available(iOS 13.0, *)) {
     rootView.backgroundColor = [UIColor systemBackgroundColor];

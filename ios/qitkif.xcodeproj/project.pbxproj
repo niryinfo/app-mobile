@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* qitkifTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* qitkifTests.m */; };
+		0C382BCF2B024C28006D446D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C382BCB2B02412B006D446D /* GoogleService-Info.plist */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -17,7 +18,6 @@
 		5F1B8D6FD7EDE6CBA2B4EAA7 /* libPods-qitkif.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 015EC47518A4CE5029043FB8 /* libPods-qitkif.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A2A5671D45F64228B0CF7812 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6914B338EFD4F148682B223 /* Quicksand-Light.ttf */; };
-		B147AE232AA076FA00BD1282 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B147AE222AA076FA00BD1282 /* GoogleService-Info.plist */; };
 		CEAD1478411545A4B3841C32 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D700095A113F485A82158C78 /* Quicksand-Regular.ttf */; };
 		DE660085F4FF4E769B7B0FB9 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36C633783AFD40D6A9F70029 /* Quicksand-Bold.ttf */; };
 		EC627023A23D444A963DB8BE /* ArchivoBlack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26E025287D604C20B34D63CA /* ArchivoBlack-Regular.ttf */; };
@@ -38,6 +38,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* qitkifTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = qitkifTests.m; sourceTree = "<group>"; };
 		015EC47518A4CE5029043FB8 /* libPods-qitkif.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qitkif.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C382BCB2B02412B006D446D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* qitkif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qitkif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = qitkif/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = qitkif/AppDelegate.mm; sourceTree = "<group>"; };
@@ -162,6 +163,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				0C382BCB2B02412B006D446D /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* qitkif */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* qitkifTests */,
@@ -314,9 +316,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C382BCF2B024C28006D446D /* GoogleService-Info.plist in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				B147AE232AA076FA00BD1282 /* GoogleService-Info.plist in Resources */,
 				EC627023A23D444A963DB8BE /* ArchivoBlack-Regular.ttf in Resources */,
 				DE660085F4FF4E769B7B0FB9 /* Quicksand-Bold.ttf in Resources */,
 				A2A5671D45F64228B0CF7812 /* Quicksand-Light.ttf in Resources */,
@@ -671,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -746,7 +748,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
